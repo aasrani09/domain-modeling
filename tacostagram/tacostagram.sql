@@ -21,8 +21,8 @@ CREATE TABLE users (
 
 CREATE TABLE followers (
     id INTEGER PRIMARY KEY AUTOINCREMENT, 
-    username_id TEXT, 
-    follower_username_id TEXT);
+    user_id_followed INTEGER,
+    user_id_follower INTEGER);
 
 CREATE TABLE comments (
     id INTEGER PRIMARY KEY AUTOINCREMENT, 
